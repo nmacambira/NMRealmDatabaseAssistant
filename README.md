@@ -1,6 +1,6 @@
 # NMRealmDatebaseAssistant
 
-NMRealmDatebaseAssistant makes it easy for you manipulate your data base (CRUD). When I worked with [Realm Swift Database](https://realm.io/docs/ swift/latest/) for the first time I tried to find a library that would help me manipulate the database without having to write all the time:
+NMRealmDatebaseAssistant makes it easy for you manipulate (CRUD) your Realm Swift Database. When I worked with [Realm Swift Database](https://realm.io/docs/swift/latest/) for the first time I tried to find a library that would help me manipulate the database without having to write all the time:
 
 ```swift
     let realm = try! Realm()
@@ -47,8 +47,9 @@ Nothing against Realm Swift Database, that in fact is very easy to use, but I ju
         switch response.result {
             case .success:
                 print("Validation Successful")
-                    NMRealmDataBaseAssistant.deleteAllObjectsFrom(entity: City.self)
-                    NMRealmDataBaseAssistant.saveAll(objects: resultArray)
+
+                NMRealmDataBaseAssistant.deleteAllObjectsFrom(entity: City.self)
+                NMRealmDataBaseAssistant.saveAll(objects: resultArray)
 
             case .failure(let error):
                 print("Validation Failure: " + error.localizedDescription)
@@ -154,7 +155,7 @@ class ViewController: UIViewController {
 
 ## License
 
-[MIT License](url)
+[MIT License](https://github.com/nmacambira/NMRealmDatabaseAssistant/blob/master/LICENSE)
 
 ## Info
 
