@@ -9,7 +9,7 @@ NMRealmDatebaseAssistant makes it easy for you manipulate (CRUD) your Realm Swif
         realm.add(object, update: true) }
     } catch {
         print(“Unable to save object”)
-}
+    }
 ```
 
 **or**
@@ -38,7 +38,7 @@ Nothing against Realm Swift Database, that in fact is very easy to use, but I ju
 
             case .failure(let error):
                 print("Validation Failure: " + error.localizedDescription)
-}
+    }
 ```
 
 ```swift
@@ -53,7 +53,7 @@ Nothing against Realm Swift Database, that in fact is very easy to use, but I ju
 
             case .failure(let error):
                 print("Validation Failure: " + error.localizedDescription)
-}
+    }
 ```
 
 3. Query for all objects from entity (sorted or not)
@@ -150,7 +150,7 @@ class ViewController: UIViewController {
 
             case .failure(let error):
                 print("Validation Failure: " + error.localizedDescription)
-}
+    }
 ```
 
 ## License
