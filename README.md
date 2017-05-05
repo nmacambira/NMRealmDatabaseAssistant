@@ -1,6 +1,6 @@
 # NMRealmDatebaseAssistant
 
-NMRealmDatebaseAssistant makes it easy for you manipulate (CRUD) your Realm Swift Database. When I worked with [Realm Swift Database](https://realm.io/docs/swift/latest/) for the first time I tried to find a library that would help me manipulate the database without having to write all the time:
+NMRealmDatebaseAssistant makes it easy for you to manipulate (CRUD) your Realm Swift Database. When I worked with [Realm Swift Database](https://realm.io/docs/swift/latest/) for the first time I tried to find a library that would help me manipulate the database without having to write all the time:
 
 ```swift
     let realm = try! Realm()
