@@ -19,7 +19,7 @@ NMRealmDatebaseAssistant makes it easy for you to manipulate (CRUD) your Realm S
     let objects = realm.objects(entity).sorted(byKeyPath: "name", ascending: true) 
 ```
 
-Nothing against Realm Swift Database, that in fact is very easy to use, but I just wanted something that would make my code more concise and readable. As I didnʼt find one, I made one for myself. Itʼs very simple and cover only the basic.
+Nothing against Realm Swift Database, that in fact is very easy to use, but I just wanted something that would make my code more concise and readable. As I didnʼt find one, I made one for myself. Itʼs very simple and covers only the basics.
 
 ## Usage
 
