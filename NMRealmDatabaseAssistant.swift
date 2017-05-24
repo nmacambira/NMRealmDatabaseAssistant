@@ -26,7 +26,6 @@ class NMRealmDatabaseAssistant {
     
     static func saveAll(objects: [Object]) {
         do {
-            
             try realm.write {
                 realm.add(objects, update: true)
             }
@@ -47,8 +46,7 @@ class NMRealmDatabaseAssistant {
     }
     
     static func deleteAllObjectsFrom(entity: Object.Type) {
-        do {
-            
+        do {            
             try realm.write {
                 realm.delete(realm.objects(entity))
             }
