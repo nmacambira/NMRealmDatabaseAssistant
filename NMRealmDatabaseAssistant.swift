@@ -55,9 +55,7 @@ class NMRealmDatabaseAssistant {
         }
     }
     
-    
     //MARK: - Querys
-    
     static func queryForAnArrayOf<T: RealmSwift.Object>(entity: T.Type, sortedByKeyPath keyPath: String?) -> Array<T>? {
         
         if keyPath != nil {
@@ -103,9 +101,7 @@ class NMRealmDatabaseAssistant {
         return result.first
     }
     
-    
-    //MARK: - Clear database
-    
+    //MARK: - Clear database    
     ///  Delete all objects from Realm DataBase
     static func clearDataBase() {
         do {
