@@ -86,14 +86,14 @@ class NMRealmDatabaseAssistant {
         }
     }
     
-    static func queryForSingleObjectFrom<T: RealmSwift.Object>(entity: Object.Type) -> T? {
+    static func queryForSingleObjectFrom<T: RealmSwift.Object>(entity: T.Type) -> T? {
         
         let result = realm.objects(entity)
         
         return result.first
     }
     
-    static func queryForSingleObjectFrom<T: RealmSwift.Object>(entity: Object.Type, withIdentifier id: Int) -> T? {
+    static func queryForSingleObjectFrom<T: RealmSwift.Object>(entity: T.Type, withIdentifier id: Int) -> T? {
         
         let result = realm.objects(entity).filter("identifier == %d", id)
         
