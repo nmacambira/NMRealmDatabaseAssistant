@@ -15,7 +15,6 @@ class NMRealmDatabaseAssistant {
     
     //MARK: - Save objects
     static func save(object: Object) {
-        
         do {
             try realm.write {
                 realm.add(object, update: true)
@@ -38,7 +37,6 @@ class NMRealmDatabaseAssistant {
     
     //MARK: - Delete objects
     static func delete(object: Object) {
-        
         do {
             try realm.write {
                 realm.delete(object)
@@ -112,7 +110,6 @@ class NMRealmDatabaseAssistant {
     
     ///  Delete all objects from Realm DataBase
     static func clearDataBase() {
-        
         do {
             try realm.write {
                 realm.deleteAll()
@@ -120,6 +117,5 @@ class NMRealmDatabaseAssistant {
         } catch {
             print("Could not clear database!")
         }
-    }
-    
+    }    
 }
