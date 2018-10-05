@@ -159,5 +159,6 @@ class ViewController: UIViewController {
 
 ## Info
 
-- Swift 3.1
+- Swift 4.1
+- Realm Swift 3.1
 
